@@ -167,7 +167,6 @@ header {
     border-radius: 50%;
     background-color: rgba(27, 45, 34, 1);
     z-index: 1;
-    ;
 }
 
 #shap {
@@ -246,14 +245,47 @@ header {
     margin-left: 3px;
 }
 
-/* Respensive design*/
-@media screen and (max-width:768px) {
-    body {
-        background-color: blueviolet;
-    }
+/* style second of main */
+/* style brands */
+.brands {
+    height: 100px;
+    background-color: black;
+    padding-top: 15px;
+}
 
+.brands ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+.brands img {
+    width: 112px;
+    height: 40px;
+}
+
+/* Respensive design*/
+@media screen and (max-width:500px) {
     header {
         display: none;
     }
 
+    .maincenter {
+        display: block;
+    }
+
+    .text-description {
+        width: 100%;
+    }
+
+    .design-image {
+        width: 100%;
+        position: fixed;
+        background-color: #3A5E46;
+    }
+
+    .price {
+        display: none;
+    }
 }
