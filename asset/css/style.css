@@ -134,12 +134,116 @@ header {
 /* maincenter design-image */
 .design-image {
     width: 48%;
+    height: 670px;
 }
 
 .design-image img {
     width: 362px;
-    height: 619px;
+    height: 630px;
     margin: auto;
+    position: relative;
+    z-index: 2;
+    margin-top: 40px;
+}
+
+.shap-green {
+    width: 308px;
+    height: 308px;
+    position: absolute;
+    top: 34%;
+    left: 64%;
+    border-radius: 50%;
+    background-color: rgba(27, 45, 34, 1);
+    z-index: 0;
+    ;
+}
+
+.shap-green-light {
+    width: 318px;
+    height: 318px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    border-radius: 50%;
+    background-color: rgba(27, 45, 34, 1);
+    z-index: 1;
+    ;
+}
+
+#shap {
+    width: 110px;
+    height: 110px;
+    background-color: rgba(253, 222, 103, 1);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 55%;
+    left: 55%;
+    padding-top: 24px;
+    font-family: Roboto;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    z-index: 3;
+    color: black;
+}
+
+.price span {
+    font-family: Lato;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 43px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    bottom: 68%;
+    left: 50%;
+}
+
+.link {
+    position: absolute;
+    bottom: -1%;
+}
+
+.link a {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.link a img {
+    width: 18px;
+    height: 16px;
+    margin: auto;
+    margin-top: 8px;
+}
+
+.rectangle {
+    position: absolute;
+    top: 42%;
+    right: 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.circle {
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 1);
+    padding-left: 10px;
+}
+
+.circle-a {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-left: 3px;
 }
 
 /* Respensive design*/
