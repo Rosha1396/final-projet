@@ -525,3 +525,85 @@ input[type="checkbox"]:checked+.heart::after {
     border-radius: 6px;
     margin: 50px;
 }
+
+.cover {
+    height: 400px;
+    background: linear-gradient(to right, rgba(253, 222, 103.1) calc(100% /12*4), rgba(59, 95, 71, 1) calc(100% /12*4));
+}
+
+/*style the end section */
+.cover-row {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cover-left {
+    width: 40%;
+}
+
+.cover-left img {
+    width: 40%;
+    height: auto;
+    position: absolute;
+}
+
+.cover-left span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    color: #000000;
+    position: absolute;
+    top: 40px;
+}
+
+/* style cover-right & counter */
+.cover-title h3 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: rgba(255, 255, 255, 1);
+    margin-left: 40px;
+}
+
+.cover-right {
+    width: 60%;
+}
+
+.link-counter {
+    text-align: center;
+}
+
+.link-counter ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px
+}
+
+.number {
+    width: 140px;
+    height: 120px;
+    background-color: rgba(27, 45, 34, 1);
+    border-radius: 6px;
+    font-family: Roboto;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    padding-top: 30px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.time {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28.13px;
+    color: rgba(255, 255, 255, 1);
+
+}
