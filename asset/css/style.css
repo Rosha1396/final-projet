@@ -124,6 +124,7 @@ header {
     margin-top: 20px;
     background-color: rgba(255, 235, 157, 1);
     border: none;
+    border-radius: 6px;
 
 }
 
@@ -135,13 +136,15 @@ header {
 .design-image {
     width: 48%;
     height: 670px;
+    position: relative;
 }
 
-.design-image img {
+.design-image .banner-image {
     width: 362px;
     height: 630px;
     margin: auto;
-    position: relative;
+    position: absolute;
+    left: 130px;
     z-index: 2;
     margin-top: 40px;
 }
@@ -150,8 +153,8 @@ header {
     width: 308px;
     height: 308px;
     position: absolute;
-    top: 34%;
-    left: 64%;
+    top: 24%;
+    left: 40%;
     border-radius: 50%;
     background-color: rgba(27, 45, 34, 1);
     z-index: 0;
@@ -162,8 +165,8 @@ header {
     width: 318px;
     height: 318px;
     position: absolute;
-    top: 45%;
-    left: 50%;
+    top: 40%;
+    left: 14%;
     border-radius: 50%;
     background-color: rgba(27, 45, 34, 1);
     z-index: 1;
@@ -175,8 +178,8 @@ header {
     background-color: rgba(253, 222, 103, 1);
     border-radius: 50%;
     position: absolute;
-    bottom: 55%;
-    left: 55%;
+    bottom: 60%;
+    left: 22%;
     padding-top: 24px;
     font-family: Roboto;
     font-size: 26px;
@@ -195,35 +198,37 @@ header {
     text-align: center;
     color: rgba(255, 255, 255, 1);
     position: absolute;
-    bottom: 68%;
-    left: 50%;
+    bottom: 70%;
+    left: 9%;
 }
 
 .link {
+    display: flex;
     position: absolute;
-    bottom: -1%;
+    bottom: 5%;
 }
 
-.link a {
+.arrow {
     width: 32px;
     height: 32px;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: 50%;
     margin-left: 5px;
 }
 
-.link a img {
+.arrow img {
     width: 18px;
-    height: 16px;
-    margin: auto;
-    margin-top: 8px;
+    height: 15px;
+    ;
 }
 
 .rectangle {
     position: absolute;
     top: 42%;
-    right: 8%;
+    right: 3%;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -248,7 +253,6 @@ header {
 /* style second of main */
 /* style brands */
 .brands {
-    height: 100px;
     background-color: black;
     padding-top: 15px;
 }
@@ -258,11 +262,12 @@ header {
     justify-content: center;
     align-items: center;
     gap: 90px;
+    padding: 20px;
 }
 
 .brands img {
-    width: 112px;
-    height: 40px;
+    width: 100%;
+    height: auto;
 }
 
 /* third of main */
@@ -272,6 +277,7 @@ h2 {
     line-height: 48px;
     text-align: left;
     color: rgba(0, 0, 0, 1);
+    padding-top: 20px;
 }
 
 .collection {
@@ -282,6 +288,7 @@ h2 {
     align-items: center;
     gap: 50px;
 }
+
 /* style left card */
 .item {
     width: 35%;
@@ -315,13 +322,14 @@ h2 {
     left: 60%;
     border-radius: 6px;
 }
+
 /* style right card */
 .item-a {
     width: 65%;
     height: 470px;
     background-color: rgba(253, 222, 103, 1);
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     border-radius: 24px;
 }
@@ -335,57 +343,185 @@ h2 {
 .item-a-text {
     display: flex;
     flex-direction: column;
-    gap:100px;
+    gap: 100px;
 }
 
 .item-a-text p {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 40px;
     text-align: center;
-    margin-right:80px;
+    margin-right: 80px;
 }
 
 .item-a-text span {
-    font-family: Roboto;
     font-size: 48px;
     font-weight: 700;
     line-height: 50.25px;
     text-align: left;
 }
-.item-a-text button{
+
+.item-a-text button {
     color: rgba(255, 255, 255, 1);
     background-color: rgba(24, 24, 24, 1);
     font-size: 14px;
     font-weight: 400;
-    width:130px;
+    width: 130px;
     padding: 10px 20px;
-    margin-left:100px;
+    margin-left: 100px;
     border-radius: 6px;
     border: none;
 }
 
-/* Respensive design
-@media screen and (max-width:500px) {
-    header {
-        display: none;
-    }
+.decoration {
+    text-decoration: line-through;
+}
 
-    .maincenter {
-        display: block;
-    }
+/* forth of main */
+/* row card */
 
-    .text-description {
-        width: 100%;
-    }
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 50px;
+    position: relative;
+}
 
-    .design-image {
-        width: 100%;
-        position: fixed;
-        background-color: #3A5E46;
-    }
+/* checkbox */
+.box {
+    width: 35px;
+    height: 35px;
+    margin: auto;
+    text-align: center;
+    margin-right: 10px;
+}
 
-    .price {
-        display: none;
-    }
-} */
+.heart-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.heart-checkbox .heart {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: lightgray;
+    transform: rotate(-45deg);
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.heart-checkbox .heart::before,
+.heart-checkbox .heart::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: lightgray;
+}
+
+.heart-checkbox .heart::before {
+    top: -8px;
+    left: 0;
+}
+
+.heart-checkbox .heart::after {
+    left: 8px;
+    top: 0;
+}
+
+.heart-checkbox input[type="checkbox"]:checked+.heart {
+    background-color: gray;
+}
+
+.heart-checkbox input[type="checkbox"]:checked+.heart::before,
+input[type="checkbox"]:checked+.heart::after {
+    background-color: gray;
+}
+
+.best {
+    background: rgba(233, 233, 233, 1);
+}
+
+.card {
+    width: 25%;
+    height: auto;
+}
+
+.card-image {
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+
+.discount a {
+    background-color: rgba(58, 94, 70, 1);
+    padding: 3px 6px;
+    color: lightgray;
+    border-radius: 6px;
+    position: absolute;
+    top: 10px;
+    margin-left: 15px;
+}
+
+.card img {
+    width: 214px;
+    height: 238px;
+    margin: auto;
+    padding: 10px;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.title-card h5 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 10px;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+.title-card span {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.6);
+
+}
+
+.btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background: rgba(253, 222, 103, 1);
+    margin-top: 5px;
+}
+
+.btn img {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+
+.best-more {
+    text-align: center;
+}
+
+.best button {
+    padding: 16px 40px;
+    background-color: rgba(24, 24, 24, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 6px;
+    margin: 50px;
+}
