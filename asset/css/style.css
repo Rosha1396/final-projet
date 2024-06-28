@@ -78,6 +78,24 @@ header {
     margin-top: 8px;
 }
 
+/* navbar */
+.nav-bar {
+    background-color: rgba(253, 222, 103, 1);
+}
+
+.nav-bar ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 15px;
+}
+
+#mobail {
+    display: none;
+}
+
 /* section first of main*/
 /* maincenter text-description */
 .maincenter {
@@ -368,14 +386,12 @@ h2 {
     font-weight: 400;
     width: 130px;
     padding: 10px 20px;
-    margin-left: 100px;
+    margin-left: 40px;
     border-radius: 6px;
     border: none;
 }
 
-.decoration {
-    text-decoration: line-through;
-}
+
 
 /* forth of main */
 /* row card */
@@ -526,6 +542,10 @@ input[type="checkbox"]:checked+.heart::after {
     margin: 50px;
 }
 
+.decoration {
+    text-decoration: line-through;
+}
+
 .cover {
     height: 400px;
     background: linear-gradient(to right, rgba(253, 222, 103.1) calc(100% /12*4), rgba(59, 95, 71, 1) calc(100% /12*4));
@@ -605,5 +625,170 @@ input[type="checkbox"]:checked+.heart::after {
     font-weight: 300;
     line-height: 28.13px;
     color: rgba(255, 255, 255, 1);
+
+}
+
+@media screen and (max-width:520px) {
+    header {
+        display: none;
+    }
+
+    #mobail {
+        width: 100%;
+        display: block;
+        position: fixed;
+        bottom: 0;
+        z-index: 10;
+    }
+
+    .maincenter {
+        display: block;
+    }
+
+    .text-description {
+        width: 100%;
+        padding-left: 5px;
+    }
+
+    .text-description h1 {
+        font-size: 90px;
+    }
+
+    .design-image {
+        width: 100%;
+    }
+
+    .design-image .banner-image {
+        left: 20px;
+    }
+
+    .shap-green {
+        width: 275px;
+        height: 275px;
+        top: 25%;
+        left: 35%;
+    }
+
+    .shap-green-light {
+        width: 275px;
+        height: 275px;
+        top: 35%;
+        left: -5%;
+    }
+
+    .price span {
+        display: none;
+    }
+
+    .link {
+        display: none;
+    }
+
+    .rectangle {
+        display: none;
+    }
+
+    .brands ul {
+        gap: 30px;
+        padding-top: 0;
+    }
+
+    .collection {
+        width: 100%;
+        display: block;
+        height: unset;
+    }
+
+    .item {
+        width: 100%;
+    }
+
+    .item-a {
+        width: 100%;
+        height: 245px;
+        margin-top: 40px;
+    }
+
+    .item-a img {
+        width: 345px;
+        height: 245px;
+        padding-top: 10px;
+    }
+
+    .item-a-text {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .item-a-text p {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .item-a-text span {
+        font-size: 20px;
+        text-align: center;
+        margin-right: 50px;
+    }
+
+    .item-a-text button {
+        width: 120px;
+        padding: 8px 16px;
+        text-align: center;
+
+    }
+
+    .best {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .row {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .cover {
+        background: rgba(59, 95, 71, 1);
+    }
+
+    .cover-left {
+        display: none;
+    }
+
+    .cover-right {
+        width: 100%;
+    }
+
+    .link-counter ul {
+        gap: 20px;
+        padding: 12px 0px 12px 0px;
+    }
+
+    .number {
+        width: 54px;
+        height: 56px;
+        margin: auto;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 0px;
+    }
+
+    .time {
+        font-size: 12px;
+    }
+
+    .cover-title h3 {
+        font-size: 32px;
+        margin-left: 80px;
+    }
 
 }
