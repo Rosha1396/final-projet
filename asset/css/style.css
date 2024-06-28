@@ -792,3 +792,74 @@ input[type="checkbox"]:checked+.heart::after {
     }
 
 }
+
+@media screen and (min-width:762px) and (max-width:1024px) {
+    .maincenter {
+        width: 100%;
+    }
+
+    .text-description {
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .design-image {
+        width: 100%;
+    }
+
+    .design-image .banner-image {
+        left: 50px;
+    }
+
+    .shap-green {
+        width: 280px;
+        height: 280px;
+        top: 24%;
+        left: 35%;
+    }
+
+    .shap-green-light {
+        width: 280px;
+        height: 280px;
+        top: 35%;
+        left: 2%;
+    }
+
+    .collection {
+        width: 100%;
+        gap: 30px;
+    }
+
+    .item-a {
+        width: 100%;
+    }
+
+    .price span {
+        bottom: 70%;
+        left: 2%;
+    }
+
+    .item button {
+        left: 40%;
+    }
+
+    .cover {
+        background: rgba(59, 95, 71, 1);
+    }
+
+    .cover-left {
+        display: none;
+    }
+
+    .cover-title h3 {
+        text-align: center;
+    }
+
+    .number {
+        border-radius: 10px;
+    }
+
+    .time {
+        margin-top: 10px;
+    }
+}
